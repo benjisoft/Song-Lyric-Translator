@@ -2,7 +2,7 @@ function trans(data) {
   console.log(data)
   langkey = "en";
   var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", "https://translation.googleapis.com/language/translate/v2?q=" + data + "&target=" + langkey + "&key=AIzaSyApfsVygZaxH3C8Z8a_WJoqzyvDy-7OhoU", false ); // false for synchronous request
+    xmlHttp.open("GET", "https://translation.googleapis.com/language/translate/v2?q=" + data + "&target=" + langkey + "&key=AIzaSyApfsVygZaxH3C8Z8a_WJoqzyvDy-7OhoU", false ); // false for synchronous request
     xmlHttp.send( null );
     rawdata = xmlHttp.responseText;
     data = JSON.parse(rawdata);
@@ -13,9 +13,9 @@ function trans(data) {
 
 function search() {
   query = document.getElementById("search_query").value.split(" by ")
-
   query2 = document.getElementById("search_query").value.split(" in ")
-  lang = query2[1]
+
+  lang = (query2[1])
   $.ajax({
     type: "GET",
     data: {
