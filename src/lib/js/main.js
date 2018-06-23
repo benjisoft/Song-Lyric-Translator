@@ -1,11 +1,7 @@
 function search() {
   query = document.getElementById("search_query").value.split(" by ")
-<<<<<<< HEAD
-
-=======
   query2 = document.getElementById("search_query").value.split(" in ")
   lang = query2[1]
->>>>>>> 58e946ff8b8410923f5280aea337bc150b84c55c
   $.ajax({
     type: "GET",
     data: {
