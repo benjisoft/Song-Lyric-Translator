@@ -12,10 +12,7 @@ function trans() {
 
 function search() {
   query = document.getElementById("search_query").value.split(" by ")
-<<<<<<< HEAD
 
-=======
->>>>>>> 4aed968b02114f5d6181e87bd1a9947b22083e9b
   query2 = document.getElementById("search_query").value.split(" in ")
   lang = query2[1]
   $.ajax({
@@ -34,7 +31,6 @@ function search() {
     success: function(data) {
       trans(data)
     }})
-  }
 }
 
 
