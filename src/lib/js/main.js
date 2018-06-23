@@ -1,6 +1,11 @@
 function search() {
   query = document.getElementById("search_query").value.split(" by ")
+<<<<<<< HEAD
 
+=======
+  query2 = document.getElementById("search_query").value.split(" in ")
+  lang = query2[1]
+>>>>>>> 58e946ff8b8410923f5280aea337bc150b84c55c
   $.ajax({
     type: "GET",
     data: {
@@ -18,3 +23,18 @@ function search() {
       console.log(data)
     }})
   }
+}
+
+function trans() {
+  var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "https://translation.googleapis.com/language/translate/v2?q=" + lyrics + "&target=" + langkey + "&key=AIzaSyApfsVygZaxH3C8Z8a_WJoqzyvDy-7OhoU", false ); // false for synchronous request
+    xmlHttp.send( null );
+    rawdata = xmlHttp.responseText;
+    data = JSON.parse(rawdata);
+    console.log(data)
+    return xmlHttp.responseText;
+/*  url = "https://translation.googleapis.com/language/translate/v2?q=" + lyrics + "&target=" + langkey + "&key=AIzaSyApfsVygZaxH3C8Z8a_WJoqzyvDy-7OhoU"
+  // tlyrics = $.getJSON(url, function(result){result})["responseJSON"]
+  return tlyrics */
+}
+
