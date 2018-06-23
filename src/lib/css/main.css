@@ -3,3 +3,17 @@
     text-align: center;
     padding-top: 5%;
 }
+
+#form {
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+
+#search_query {
+    min-width: 60%;
+    font-size: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
