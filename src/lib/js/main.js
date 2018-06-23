@@ -21,12 +21,6 @@ function search() {
   }
 }
 
-// if (lang == "French" || "french") {langkey = "fr"}
-// else if (lang == "Spanish" || "spanish") {langkey = "es"}
-
-lyrics = "hey dude"
-langkey = "fr"
-
 function trans() {
   var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", "https://translation.googleapis.com/language/translate/v2?q=" + lyrics + "&target=" + langkey + "&key=AIzaSyApfsVygZaxH3C8Z8a_WJoqzyvDy-7OhoU", false ); // false for synchronous request
