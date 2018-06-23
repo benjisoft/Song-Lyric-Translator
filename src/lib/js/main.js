@@ -1,11 +1,12 @@
-function trans() {
+function trans(data) {
+  console.log(data)
+  langkey = "en";
   var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", "https://translation.googleapis.com/language/translate/v2?q=" + lyrics + "&target=" + langkey + "&key=AIzaSyApfsVygZaxH3C8Z8a_WJoqzyvDy-7OhoU", false ); // false for synchronous request
+    xmlHttp.open( "GET", "https://translation.googleapis.com/language/translate/v2?q=" + data + "&target=" + langkey + "&key=AIzaSyApfsVygZaxH3C8Z8a_WJoqzyvDy-7OhoU", false ); // false for synchronous request
     xmlHttp.send( null );
     rawdata = xmlHttp.responseText;
     data = JSON.parse(rawdata);
-    console.log(data)
-    return xmlHttp.responseText;
+    return data;
 }
 
 
@@ -29,7 +30,9 @@ function search() {
     jsonpCallback: 'jsonp_callback',
     contentType: 'application/json',
     success: function(data) {
-      trans(data)
+      console.log(data)
+      console.log(
+        JSON.parse(rawdata)(trans(data["message"]["body"]["lyrics"]["lyrics_body"])))
     }})
 }
 
