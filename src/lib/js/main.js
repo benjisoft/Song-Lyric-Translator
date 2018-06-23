@@ -28,8 +28,9 @@ function search() {
     jsonpCallback: 'jsonp_callback',
     contentType: 'application/json',
     success: function(data) {
-      document.getElementById("response").innerHTML = (trans(data["message"]["body"]["lyrics"]["lyrics_body"]))
-      document.getElementById("original").innerHTML = (data["message"]["body"]["lyrics"]["lyrics_body"])
+      lyrics = data["message"]["body"]["lyrics"]["lyrics_body"].split("*******")[0]
+      document.getElementById("response").innerHTML = (trans(lyrics))
+      document.getElementById("original").innerHTML = (lyrics)
     }
   })
 }
