@@ -3,3 +3,14 @@
     text-align: center;
     padding-top: 5%;
 }
+
+#form {
+    width: 50%;
+    clear: both;
+    text-align: center;
+}
+
+#search_query {
+    width: 100%;
+    clear: both;
+}
