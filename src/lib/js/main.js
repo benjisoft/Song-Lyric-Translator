@@ -1,6 +1,10 @@
 function trans(data) {
   console.log(data)
-  langkey = "fr";
+  console.log(lang)
+  if (lang == "french"){langkey = "fr"}
+  if (lang == "english"){langkey = "en"}
+  if (lang == "german"){langkey = "de"}
+  if (lang == "chinese"){langkey = "zh"}
   var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", "https://translation.googleapis.com/language/translate/v2?q=" + data + "&target=" + langkey + "&key=AIzaSyApfsVygZaxH3C8Z8a_WJoqzyvDy-7OhoU", false ); // false for synchronous request
     xmlHttp.send( null );
@@ -10,15 +14,13 @@ function trans(data) {
 
 
 function search() {
-  query = document.getElementById("search_query").value.split(" by ")
-  query2 = document.getElementById("search_query").value.split(" in ")
+  query = document.getElementById("search_query").value.toLowerCase().split(" in ")
 
-  lang = (query2[1])
+  lang = query[1]
   $.ajax({
     type: "GET",
     data: {
         apikey:"a2cb19040a4a1174fc3ccea1a22d622c",
-        q_artist: query[1],
         q_track: query[0],
         format:"jsonp",
         callback:"jsonp_callback"
