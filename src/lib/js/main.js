@@ -1,6 +1,5 @@
 function search() {
   query = document.getElementById("search_query").value.split(" by ")
-  url = "http://benbot-translator.herokuapp.com/api/find/" + query[1] + "/" + query[0]
 
   $.ajax({
     type: "GET",
