@@ -16,7 +16,7 @@
 <h3 align="center">Song Lyric Translator - 本</h3>
 
   <p align="center">
-    This project was created during the Sage AI Hackathon in 2018. Codenamed Project Ben (本) because we were both called Ben we had that little inspiration. This was a fun project thrown together using the Google Translation API and the MusixMatch API to gather the lyrics. 
+    This project was created during the Sage AI Hackathon in 2018. Codenamed Project Ben (本) because we were both called Ben we had that little inspiration. This was a fun project thrown together using the Google Translation API and the MusixMatch API to gather the lyrics.
     <br />
 	<br />
     <strong><s>Explore the docs »</s> There are no docs. This is a hackathon project. </strong></a>
