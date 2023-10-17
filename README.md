@@ -1,11 +1,10 @@
 <!-- Thank you to Othneil Drew for the template: https://github.com/othneildrew/ -->
-<a name="readme-top"></a>
 
+<a name="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -31,8 +30,6 @@
   </p>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -51,43 +48,38 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Ben Bot Screen Shot][product-screenshot]](https://benjilewis.dev/Song-Lyric-Translator)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
-* [![JQuery][JQuery.com]][JQuery-url]
+- [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
-This is a pure HTML/ JS application. Simply download the application, update the API keys and open it in a web browser. 
+This is a pure HTML/ JS application. Simply download the application, update the API keys and open it in a web browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 Simply type in the name of a song and hit go. The application will then search for the lyrics and translate them into the language of your choice. (I think; I can't quite remember how it actually works.)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -103,18 +95,16 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the GNU GPL v3 License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 Ben Lewis - [@benjisoft](https://twitter.com/benjisoft) - benji@benjisoft.org.uk.com
@@ -125,9 +115,9 @@ Project Link: [https://github.com/benjisoft/Song-Lyric-Translator](https://githu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/benjisoft/Song-Lyric-Translator.svg?style=for-the-badge
 [contributors-url]: https://github.com/benjisoft/Song-Lyric-Translator/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/benjisoft/Song-Lyric-Translator.svg?style=for-the-badge
@@ -156,4 +146,4 @@ Project Link: [https://github.com/benjisoft/Song-Lyric-Translator](https://githu
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[JQuery-url]: https://jquery.com
